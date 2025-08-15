@@ -1,29 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Контакты - Nefis Market</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — Nefis Market</title>
+  <meta name="description" content="Связаться с Nefis Market: WhatsApp, Telegram, телефон. Где купить сливочное масло." />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.addEventListener('DOMContentLoaded',()=>{document.querySelector('.burger')?.addEventListener('click',()=>document.querySelector('.nav-links').classList.toggle('open'))})</script>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="index.html#products">Продукция</a>
-        <a href="about.html">О нас</a>
-        <a href="contacts.html">Контакты</a>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><div class="logo"></div><h1>Nefis Market</h1></a>
+    <button class="burger" aria-label="Меню"><svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="perviy.html">Первый сорт</a>
+      <a href="sredniy.html">Средний сорт</a>
+      <a href="vysshij.html">Высший сорт</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html" class="active">Контакты</a>
     </nav>
+  </div>
 </header>
 
-<section class="contacts">
-    <h2>Свяжитесь с нами</h2>
-    <a href="https://wa.me/79991234567" target="_blank">Написать в WhatsApp</a>
-    <a href="https://t.me/username" target="_blank">Написать в Telegram</a>
-    <a href="tel:+79991234567">Позвонить</a>
-</section>
+<main>
+  <section class="section">
+    <div class="container kv">
+      <div class="card">
+        <h2 class="m0">Связаться и заказать</h2>
+        <p class="mt8" style="color:var(--muted)">Пишите или звоните — ответим быстро. Отправим прайс и подскажем, где удобнее приобрести.</p>
+        <div class="cta-row mt16">
+          <a class="btn btn-primary" href="https://wa.me/79990000000" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M7 12c2 4 5 5 5 5l2-2 3 1-1 3s-5 2-10-3S3 7 3 7l3-1 1 3-2 2z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            WhatsApp
+          </a>
+          <a class="btn" href="https://t.me/nefis_market" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="#2b2b2b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Telegram
+          </a>
+          <a class="btn" href="tel:+79990000000">
+            <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.11 5.18 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.76.62 2.58a2 2 0 0 1-.45 2.11L9 10a16 16 0 0 0 5 5l.59-1.27a2 2 0 0 1 2.11-.45c.82.29 1.68.5 2.58.62A2 2 0 0 1 22 16.92z" stroke="#2b2b2b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Позвонить
+          </a>
+        </div>
 
-<footer>
-    <p>© 2025 Nefis Market. Все права защищены.</p>
+        <h3 class="mt24 m0">Реквизиты и дилеры</h3>
+        <ul class="mt8">
+          <li>Адрес: г. Казань, ул. Пряничная, 12</li>
+          <li>Время: Пн–Пт 9:00–18:00</li>
+          <li>Опт и HoReCa: напишите в WhatsApp — пришлём прайс</li>
+        </ul>
+      </div>
+      <img src="https://images.unsplash.com/photo-1484876065684-b683cf17d276?q=80&w=1200&auto=format&fit=crop" alt="Точка продаж Nefis Market" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h3 class="m0">Где купить</h3>
+      <p class="mt8">Пока доступно через прямые заказы. Список партнёров будет пополняться.</p>
+      <div class="grid grid-3 mt16">
+        <div class="card"><h4 class="m0">Казань</h4><p class="mt8">Самовывоз и доставка по городу.</p></div>
+        <div class="card"><h4 class="m0">Онлайн-заказы</h4><p class="mt8">WhatsApp / Telegram — отправим в СДЭК.</p></div>
+        <div class="card"><h4 class="m0">HoReCa</h4><p class="mt8">Поставки 1–10 кг. Индивидуальные условия.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer section">
+  <div class="container">
+    <div class="cols">
+      <div class="brand"><div class="logo"></div><h1>Nefis Market</h1></div>
+      <div><h4 class="m0">Документы</h4><p class="mt8">ГОСТ, сертификаты — по запросу.</p></div>
+      <div><h4 class="m0">Связь</h4><p class="mt8"><a href="https://wa.me/79990000000" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://t.me/nefis_market" target="_blank" rel="noopener">Telegram</a><br><a href="tel:+79990000000">+7 (999) 000-00-00</a></p></div>
+    </div>
+    <div class="copy">© 2025 Nefis Market</div>
+  </div>
 </footer>
 </body>
 </html>
