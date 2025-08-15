@@ -1,90 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Высший сорт — Nefis Market</title>
-  <meta name="description" content="Высший сорт Nefis: чистый сливочный профиль и премиальная текстура. Для подачи на стол и высокой кухни." />
-  <link rel="stylesheet" href="style.css" />
-  <script>document.addEventListener('DOMContentLoaded',()=>{document.querySelector('.burger')?.addEventListener('click',()=>document.querySelector('.nav-links').classList.toggle('open'))})</script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Product",
-    "name":"Сливочное масло — Высший сорт",
-    "brand":{"@type":"Brand","name":"Nefis Market"},
-    "description":"Чистый сливочный профиль, премиальная текстура, для сервировки.",
-    "image":"https://images.unsplash.com/photo-1543332164-6e82f355bad8?q=80&w=1200&auto=format&fit=crop",
-    "offers":{"@type":"Offer","price":"279","priceCurrency":"RUB","availability":"https://schema.org/InStock"}
-  }
-  </script>
+    <meta charset="UTF-8">
+    <title>Высший сорт - Nefis Market</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <div class="container nav">
-    <a href="index.html" class="brand"><div class="logo"></div><h1>Nefis Market</h1></a>
-    <button class="burger" aria-label="Меню"><svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round"/></svg></button>
-    <nav class="nav-links">
-      <a href="index.html">Главная</a>
-      <a href="perviy.html">Первый сорт</a>
-      <a href="sredniy.html">Средний сорт</a>
-      <a href="vysshij.html" class="active">Высший сорт</a>
-      <a href="about.html">О нас</a>
-      <a href="contacts.html">Контакты</a>
+<header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="index.html#products">Продукция</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
     </nav>
-  </div>
 </header>
 
-<main>
-  <section class="section">
-    <div class="container kv">
-      <img src="https://images.unsplash.com/photo-1543332164-6e82f355bad8?q=80&w=1200&auto=format&fit=crop" alt="Высший сорт масла" />
-      <div class="card">
-        <h2 class="m0">Высший сорт</h2>
-        <p class="mt8" style="color:var(--muted)">Премиальная структура, тонкий аромат сливок и чистый послевкусие. Для подачи на стол и высокой кухни.</p>
-        <div class="price">от 279 ₽ / 200 г</div>
-        <div class="cta-row mt16">
-          <a class="btn btn-primary" href="https://wa.me/79990000000" target="_blank" rel="noopener">Заказать в WhatsApp</a>
-          <a class="btn" href="https://t.me/nefis_market" target="_blank" rel="noopener">Написать в Telegram</a>
-          <a class="btn" href="tel:+79990000000">Позвонить</a>
-        </div>
-        <h3 class="mt24 m0">Особенности</h3>
-        <ul class="mt8">
-          <li>Жирность: 82,5%</li>
-          <li>Таяние при температуре тела — подача на стол, соусы, кремы</li>
-          <li>Упаковка: фольга 200 г / крафт-короб 1 кг (Horeca)</li>
-          <li>Состав: только сливки пастеризованные</li>
-        </ul>
-      </div>
+<section class="products">
+    <div class="card">
+        <img src="https://via.placeholder.com/600x400?text=Высший+сорт" alt="Высший сорт масла">
+        <h3>Высший сорт</h3>
+        <p>Премиальное сливочное масло с глубоким вкусом и насыщенным ароматом. Подходит для гурманов и ценителей качества.</p>
     </div>
-  </section>
+</section>
 
-  <section class="section">
-    <div class="container">
-      <h3 class="m0">Пищевая ценность (на 100 г)</h3>
-      <table class="table mt16">
-        <thead><tr><th>Показатель</th><th>Количество</th></tr></thead>
-        <tbody>
-          <tr><td>Энергетическая ценность</td><td>748 ккал</td></tr>
-          <tr><td>Жиры</td><td>82,5 г</td></tr>
-          <tr><td>Белки</td><td>0,6 г</td></tr>
-          <tr><td>Углеводы</td><td>0,8 г</td></tr>
-        </tbody>
-      </table>
-      <p class="mt16 quote">Подавайте на охлаждённой тарелке, чтобы сохранить форму и блеск при сервировке.</p>
-    </div>
-  </section>
-</main>
-
-<footer class="footer section">
-  <div class="container">
-    <div class="cols">
-      <div class="brand"><div class="logo"></div><h1>Nefis Market</h1></div>
-      <div><h4 class="m0">Документы</h4><p class="mt8">ГОСТ, сертификаты — по запросу.</p></div>
-      <div><h4 class="m0">Связь</h4><p class="mt8"><a href="https://wa.me/79990000000" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://t.me/nefis_market" target="_blank" rel="noopener">Telegram</a><br><a href="tel:+79990000000">+7 (999) 000-00-00</a></p></div>
-    </div>
-    <div class="copy">© 2025 Nefis Market</div>
-  </div>
+<footer>
+    <p>© 2025 Nefis Market. Все права защищены.</p>
 </footer>
 </body>
 </html>
