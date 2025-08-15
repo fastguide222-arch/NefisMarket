@@ -1,30 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Средний сорт - Nefis Market</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Средний сорт — Nefis Market</title>
+  <meta name="description" content="Средний сорт Nefis: насыщенный вкус и стабильная текстура. Для горячих блюд, соусов и карамелизации." />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.addEventListener('DOMContentLoaded',()=>{document.querySelector('.burger')?.addEventListener('click',()=>document.querySelector('.nav-links').classList.toggle('open'))})</script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Сливочное масло — Средний сорт",
+    "brand":{"@type":"Brand","name":"Nefis Market"},
+    "description":"Насыщенный вкус и стабильная текстура. Для горячих блюд.",
+    "image":"https://images.unsplash.com/photo-1623065426904-7d3fbc71b82f?q=80&w=1200&auto=format&fit=crop",
+    "offers":{"@type":"Offer","price":"219","priceCurrency":"RUB","availability":"https://schema.org/InStock"}
+  }
+  </script>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="index.html#products">Продукция</a>
-        <a href="about.html">О нас</a>
-        <a href="contacts.html">Контакты</a>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><div class="logo"></div><h1>Nefis Market</h1></a>
+    <button class="burger" aria-label="Меню"><svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="perviy.html">Первый сорт</a>
+      <a href="sredniy.html" class="active">Средний сорт</a>
+      <a href="vysshij.html">Высший сорт</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
     </nav>
+  </div>
 </header>
 
-<section class="products">
-    <div class="card">
-        <img src="https://via.placeholder.com/600x400?text=Средний+сорт" alt="Средний сорт масла">
-        <h3>Средний сорт</h3>
-        <p>Баланс нежности и насыщенности. Отлично подходит для кулинарных экспериментов и изысканных блюд.</p>
+<main>
+  <section class="section">
+    <div class="container kv">
+      <img src="https://images.unsplash.com/photo-1623065426904-7d3fbc71b82f?q=80&w=1200&auto=format&fit=crop" alt="Средний сорт масла" />
+      <div class="card">
+        <h2 class="m0">Средний сорт</h2>
+        <p class="mt8" style="color:var(--muted)">Выдержанный вкус и удобная текстура. Идеален для жарки, соусов, карамелизации овощей.</p>
+        <div class="price">от 219 ₽ / 200 г</div>
+        <div class="cta-row mt16">
+          <a class="btn btn-primary" href="https://wa.me/79990000000" target="_blank" rel="noopener">Заказать в WhatsApp</a>
+          <a class="btn" href="https://t.me/nefis_market" target="_blank" rel="noopener">Написать в Telegram</a>
+          <a class="btn" href="tel:+79990000000">Позвонить</a>
+        </div>
+        <h3 class="mt24 m0">Особенности</h3>
+        <ul class="mt8">
+          <li>Жирность: 80%</li>
+          <li>Пластичность при комнатной температуре — удобно для кулинарии</li>
+          <li>Упаковка: фольга 200 г / 400 г</li>
+          <li>Рекомендовано для горячих блюд и соусов</li>
+        </ul>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer>
-    <p>© 2025 Nefis Market. Все права защищены.</p>
+  <section class="section">
+    <div class="container">
+      <h3 class="m0">Пищевая ценность (на 100 г)</h3>
+      <table class="table mt16">
+        <thead><tr><th>Показатель</th><th>Количество</th></tr></thead>
+        <tbody>
+          <tr><td>Энергетическая ценность</td><td>720 ккал</td></tr>
+          <tr><td>Жиры</td><td>80 г</td></tr>
+          <tr><td>Белки</td><td>0,7 г</td></tr>
+          <tr><td>Углеводы</td><td>1,0 г</td></tr>
+        </tbody>
+      </table>
+      <p class="mt16 quote">Лайфхак: для соусов используйте порции по 10–15 г — легко контролировать текстуру.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer section">
+  <div class="container">
+    <div class="cols">
+      <div class="brand"><div class="logo"></div><h1>Nefis Market</h1></div>
+      <div><h4 class="m0">Документы</h4><p class="mt8">ГОСТ, сертификаты — по запросу.</p></div>
+      <div><h4 class="m0">Связь</h4><p class="mt8"><a href="https://wa.me/79990000000" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://t.me/nefis_market" target="_blank" rel="noopener">Telegram</a><br><a href="tel:+79990000000">+7 (999) 000-00-00</a></p></div>
+    </div>
+    <div class="copy">© 2025 Nefis Market</div>
+  </div>
 </footer>
 </body>
 </html>
