@@ -2,71 +2,74 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
+  <title>О компании — Nefis Market</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>О нас — Nefis Market</title>
-  <meta name="description" content="Nefis Market — честное сливочное масло из свежего молока. История, ценности, производство." />
+  <meta name="description" content="История и подход Nefis Market: отбор партий, холодовая цепь, открытые сертификаты." />
   <link rel="stylesheet" href="style.css" />
-  <script>document.addEventListener('DOMContentLoaded',()=>{document.querySelector('.burger')?.addEventListener('click',()=>document.querySelector('.nav-links').classList.toggle('open'))})</script>
 </head>
 <body>
 <header class="header">
-  <div class="container nav">
-    <a href="index.html" class="brand"><div class="logo"></div><h1>Nefis Market</h1></a>
-    <button class="burger" aria-label="Меню"><svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round"/></svg></button>
-    <nav class="nav-links">
-      <a href="index.html">Главная</a>
-      <a href="perviy.html">Первый сорт</a>
-      <a href="sredniy.html">Средний сорт</a>
-      <a href="vysshij.html">Высший сорт</a>
-      <a href="about.html" class="active">О нас</a>
-      <a href="contacts.html">Контакты</a>
+  <div class="container row">
+    <a class="logo" href="index.html"><span class="logo-mark"></span> NEFIS MARKET</a>
+    <nav class="nav">
+      <a href="index.html#catalog">Каталог</a>
+      <a href="index.html#why">Почему мы</a>
+      <a href="index.html#certs">Сертификаты</a>
+      <a href="contacts.html" class="cta">Заказать</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="section">
-    <div class="container kv">
-      <img src="https://images.unsplash.com/photo-1511914265872-c40672604a66?q=80&w=1200&auto=format&fit=crop" alt="Ферма и свежие сливки" />
-      <div class="card">
-        <h2 class="m0">Мы делаем масло, которым гордимся</h2>
-        <p class="mt8" style="color:var(--muted)">Отбираем молоко у проверенных ферм, пастеризуем, взбиваем сливки и формуем партии, сохраняя природный вкус. Работаем прозрачно и отвечаем за качество каждой упаковки.</p>
-        <ul class="mt16">
-          <li>Только сливки. Никаких растительных жиров.</li>
-          <li>Регулярный лабораторный контроль по ГОСТ.</li>
-          <li>Открытая коммуникация: покажем производство по запросу.</li>
-        </ul>
-        <a class="btn mt16" href="contacts.html">Связаться</a>
-      </div>
-    </div>
-  </section>
+<main class="container">
+  <nav class="breadcrumbs"><a href="index.html">Главная</a> / <span>О нас</span></nav>
 
   <section class="section">
-    <div class="container grid grid-3">
-      <div class="card">
-        <h3 class="m0">Происхождение</h3>
-        <p class="mt8">Фермы в экологически чистых районах. Короткая логистика — свежее сырьё каждый день.</p>
-      </div>
-      <div class="card">
-        <h3 class="m0">Производство</h3>
-        <p class="mt8">Современное оборудование и контроль температуры на каждом этапе, чтобы сохранить вкус.</p>
-      </div>
-      <div class="card">
-        <h3 class="m0">Ответственность</h3>
-        <p class="mt8">Мы публикуем результаты проверок партий и готовы предоставить сертификаты по запросу.</p>
-      </div>
+    <h1>О Nefis Market</h1>
+    <p class="sub">Мы делаем простую вещь: поставляем <strong>честное сливочное масло</strong>, которое хочется нам самим.</p>
+
+    <div class="grid cols-2 mt-16">
+      <div class="card"><div class="body">
+        <h3>Принципы качества</h3>
+        <ul>
+          <li>Партии только с подтверждённым происхождением и ГОСТ.</li>
+          <li>Холодовая цепь от склада до двери клиента.</li>
+          <li>Открытые сертификаты и протоколы анализов.</li>
+        </ul>
+      </div></div>
+
+      <div class="card"><div class="body">
+        <h3>Для кого мы</h3>
+        <ul>
+          <li>Семьи, которым важен натуральный вкус.</li>
+          <li>Кондитеры и пекари (особенно линейка 82,5%).</li>
+          <li>Кафе и кухни, где цена‑качество решают.</li>
+        </ul>
+      </div></div>
     </div>
+
+    <hr class="sep">
+
+    <h3>Как мы работаем</h3>
+    <ol>
+      <li><strong>Отбор.</strong> Проверяем документы, дегустируем контрольные образцы.</li>
+      <li><strong>Хранение.</strong> Температурный режим и срок годности под контролем.</li>
+      <li><strong>Поставка.</strong> Доставка в термоупаковке, бесплатна от 2500 ₽.</li>
+    </ol>
+
+    <div class="card mt-24"><div class="body">
+      Есть вопросы или нужен опт? Напишите нам — подберём решение.
+      <div class="mt-8">
+        <a class="btn" href="contacts.html">Связаться</a>
+      </div>
+    </div></div>
   </section>
 </main>
 
-<footer class="footer section">
-  <div class="container">
-    <div class="cols">
-      <div class="brand"><div class="logo"></div><h1>Nefis Market</h1></div>
-      <div><h4 class="m0">Документы</h4><p class="mt8">ГОСТ, сертификаты — по запросу.</p></div>
-      <div><h4 class="m0">Связь</h4><p class="mt8"><a href="https://wa.me/79990000000" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://t.me/nefis_market" target="_blank" rel="noopener">Telegram</a><br><a href="tel:+79990000000">+7 (999) 000-00-00</a></p></div>
-    </div>
-    <div class="copy">© 2025 Nefis Market</div>
+<footer class="footer">
+  <div class="container cols">
+    <div><a class="logo" href="index.html"><span class="logo-mark"></span> NEFIS MARKET</a></div>
+    <div><a href="index.html#catalog">Каталог</a><br><a href="contacts.html">Контакты</a></div>
+    <div><a href="mailto:hello@nefis.market">hello@nefis.market</a><br><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></div>
   </div>
 </footer>
 </body>
