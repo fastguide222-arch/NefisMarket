@@ -3,64 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NefisMarket — Сливочное масло</title>
+    <title>NefisMarket — Главная</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-    <div class="container">
-        <div class="logo">
-            <img src="https://via.placeholder.com/40" alt="Логотип">
-            NefisMarket
-        </div>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html">О нас</a>
-            <a href="contacts.html">Контакты</a>
-        </nav>
-    </div>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="first.html">Первый сорт</a>
+        <a href="middle.html">Средний сорт</a>
+        <a href="premium.html">Высший сорт</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+    </nav>
 </header>
 
-<main>
-    <h1>Добро пожаловать в NefisMarket!</h1>
-    <p>Мы предлагаем лучшее сливочное масло трёх сортов: первый, средний и высший.</p>
+<div class="hero">
+    <h1>NefisMarket — Масло с характером</h1>
+    <a href="first.html" class="button">Открыть каталог</a>
+</div>
 
-    <div class="cards">
+<section class="section">
+    <h2>Наши сорта</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
         <div class="card">
-            <a href="perviy.html">
-                <img src="https://via.placeholder.com/400x200" alt="Первый сорт">
-            </a>
-            <div class="card-content">
-                <h3>Первый сорт</h3>
-                <p>Описание масла первого сорта (заглушка).</p>
-                <a href="perviy.html">Подробнее</a>
-            </div>
+            <img src="нефис.webp" alt="Первый сорт">
+            <h2>Первый сорт</h2>
+            <p>Описание заглушка. Будет заменено вашим текстом.</p>
+            <a href="first.html" class="button">Подробнее</a>
         </div>
         <div class="card">
-            <a href="sredniy.html">
-                <img src="https://via.placeholder.com/400x200" alt="Средний сорт">
-            </a>
-            <div class="card-content">
-                <h3>Средний сорт</h3>
-                <p>Описание масла среднего сорта (заглушка).</p>
-                <a href="sredniy.html">Подробнее</a>
-            </div>
+            <img src="нефис.webp" alt="Средний сорт">
+            <h2>Средний сорт</h2>
+            <p>Описание заглушка. Будет заменено вашим текстом.</p>
+            <a href="middle.html" class="button">Подробнее</a>
         </div>
         <div class="card">
-            <a href="vysshiy.html">
-                <img src="https://via.placeholder.com/400x200" alt="Высший сорт">
-            </a>
-            <div class="card-content">
-                <h3>Высший сорт</h3>
-                <p>Описание масла высшего сорта (заглушка).</p>
-                <a href="vysshiy.html">Подробнее</a>
-            </div>
+            <img src="нефис.webp" alt="Высший сорт">
+            <h2>Высший сорт</h2>
+            <p>Описание заглушка. Будет заменено вашим текстом.</p>
+            <a href="premium.html" class="button">Подробнее</a>
         </div>
     </div>
-</main>
+</section>
 
 <footer>
-    <p>© 2025 NefisMarket</p>
+    &copy; 2025 NefisMarket. Все права защищены.
 </footer>
 </body>
 </html>
