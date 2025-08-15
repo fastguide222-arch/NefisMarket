@@ -1,48 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Сливочное масло - Nefis Market</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nefis Market — Натуральное сливочное масло</title>
+  <meta name="description" content="Премиальное сливочное масло: первый, средний и высший сорт. Без добавок, насыщенный сливочный вкус. Где купить и как связаться — Nefis Market." />
+  <meta property="og:title" content="Nefis Market — Натуральное сливочное масло">
+  <meta property="og:description" content="Ассортимент сортов, история бренда, отзывы и контакты для заказа.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1604908554035-7f8b2d5a0f78?q=80&w=1200&auto=format&fit=crop" />
+  <meta name="theme-color" content="#2f6b3a">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // бургер для мобильного меню
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.querySelector('.burger');
+      const links = document.querySelector('.nav-links');
+      btn?.addEventListener('click', () => links.classList.toggle('open'));
+    });
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Nefis Market",
+    "url":"https://fastguide222-arch.github.io/NefisMarket/",
+    "logo":"https://fastguide222-arch.github.io/NefisMarket/logo.png",
+    "sameAs":["https://t.me/nefis_market"]
+  }
+  </script>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="index.html#products">Продукция</a>
-        <a href="about.html">О нас</a>
-        <a href="contacts.html">Контакты</a>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand" aria-label="Nefis Market — на главную">
+      <div class="logo" aria-hidden="true"></div>
+      <h1>Nefis Market</h1>
+    </a>
+    <button class="burger" aria-label="Меню">
+      <!-- иконка -->
+      <svg class="icon" viewBox="0 0 24 24" width="24" height="24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Главная</a>
+      <a href="perviy.html">Первый сорт</a>
+      <a href="sredniy.html">Средний сорт</a>
+      <a href="vysshij.html">Высший сорт</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
     </nav>
+  </div>
 </header>
 
-<section class="hero">
-    <h1>Настоящее сливочное масло</h1>
-    <p>Натуральный вкус и качество, проверенное временем</p>
-</section>
+<main>
+  <!-- Хиро -->
+  <section class="section">
+    <div class="container hero">
+      <div class="card">
+        <span class="badge">
+          <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.3 6.9H21l-5.7 4.1L16.6 20 12 15.9 7.4 20l1.3-7-5.7-4.1h6.7L12 2z" stroke="#d9a441" stroke-width="1.5"/></svg>
+          Натуральное. Без добавок. ГОСТ.
+        </span>
+        <h2>Сливочное масло <span style="color:var(--brand-2)">с характером</span></h2>
+        <p>Три сорта для разных задач: от идеального завтрака до высокой кухни. Мы делаем масло из свежего молока, сохраняем густой сливочный вкус и честно пишем состав.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="contacts.html">
+            <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M15 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+            Где купить
+          </a>
+          <a class="btn btn-secondary" href="#assort">Смотреть ассортимент</a>
+          <a class="btn btn-accent" href="https://wa.me/79990000000" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop" alt="Сливочное масло на деревянной доске" />
+    </div>
+  </section>
 
-<section id="products" class="products">
-    <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Первый+сорт" alt="Первый сорт масла">
-        <h3>Первый сорт</h3>
-        <p>Мягкий вкус, идеален для повседневного использования.</p>
-        <a href="perviy.html" class="btn">Подробнее</a>
+  <!-- Ассортимент -->
+  <section id="assort" class="section">
+    <div class="container">
+      <h2 class="m0">Ассортимент</h2>
+      <p class="mt8" style="color:var(--muted)">Выберите свой вкус и узнайте подробности.</p>
+      <div class="grid grid-3 mt24">
+        <!-- Первый сорт -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1626697559855-0f3bca7ff280?q=80&w=1200&auto=format&fit=crop" alt="Первый сорт масла — упаковка" />
+          <h3>Первый сорт</h3>
+          <p>Классический сливочный вкус. Идеален для завтраков и домашней выпечки.</p>
+          <div class="price">от 179 ₽ / 200 г</div>
+          <div class="actions">
+            <a class="btn btn-primary" href="perviy.html">Подробнее</a>
+            <a class="btn" href="https://t.me/nefis_market" target="_blank" rel="noopener">Telegram</a>
+          </div>
+        </article>
+        <!-- Средний сорт -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1623065426904-7d3fbc71b82f?q=80&w=1200&auto=format&fit=crop" alt="Средний сорт масла — упаковка" />
+          <h3>Средний сорт</h3>
+          <p>Насыщенный, пластичный. Для горячих блюд, соусов и карамелизации.</p>
+          <div class="price">от 219 ₽ / 200 г</div>
+          <div class="actions">
+            <a class="btn btn-primary" href="sredniy.html">Подробнее</a>
+            <a class="btn" href="tel:+79990000000">Позвонить</a>
+          </div>
+        </article>
+        <!-- Высший сорт -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1543332164-6e82f355bad8?q=80&w=1200&auto=format&fit=crop" alt="Высший сорт масла — упаковка" />
+          <h3>Высший сорт</h3>
+          <p>Премиальная структура и чистый вкус. Для подачи на стол и высокой кухни.</p>
+          <div class="price">от 279 ₽ / 200 г</div>
+          <div class="actions">
+            <a class="btn btn-primary" href="vysshij.html">Подробнее</a>
+            <a class="btn" href="https://wa.me/79990000000" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </article>
+      </div>
     </div>
-    <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Средний+сорт" alt="Средний сорт масла">
-        <h3>Средний сорт</h3>
-        <p>Баланс нежности и насыщенности для гурманов.</p>
-        <a href="sredniy.html" class="btn">Подробнее</a>
-    </div>
-    <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Высший+сорт" alt="Высший сорт масла">
-        <h3>Высший сорт</h3>
-        <p>Премиальный продукт с глубоким вкусом и ароматом.</p>
-        <a href="vysshij.html" class="btn">Подробнее</a>
-    </div>
-</section>
+  </section>
 
-<footer>
-    <p>© 2025 Nefis Market. Все права защищены.</p>
+  <!-- О бренде -->
+  <section class="section">
+    <div class="container kv">
+      <img src="https://images.unsplash.com/photo-1511914265872-c40672604a66?q=80&w=1200&auto=format&fit=crop" alt="Ферма и свежие сливки" />
+      <div class="card">
+        <h3>Честное масло из свежего молока</h3>
+        <p class="mt8">Мы контролируем путь от молока до упаковки. Без искусственных добавок. Сохраняем природную жирность и аромат сливок, чтобы вы чувствовали вкус настоящего.</p>
+        <p class="mt16">Работаем по ГОСТ, регулярно тестируем партии и открыто публикуем результаты.</p>
+        <a class="btn mt16" href="about.html">Подробнее о нас</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="section-tight">
+    <div class="container">
+      <h2 class="m0">Отзывы</h2>
+      <div class="grid grid-3 mt16">
+        <div class="quote">«Это масло — как из детства. Тает ровно так, как надо. Беру регулярно для круассанов.» — Анастасия</div>
+        <div class="quote">«Высший сорт идёт отдельной тарелкой на стол. Гости спрашивают, где купил.» — Михаил</div>
+        <div class="quote">«Выпечка стала стабильнее: вкус выраженный, ничего лишнего в составе.» — Ольга</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer section">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a href="index.html" class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <h1>Nefis Market</h1>
+        </a>
+        <p class="mt8">Натуральное сливочное масло из свежего молока. Сделано с заботой и вниманием к деталям.</p>
+      </div>
+      <div>
+        <h4 class="m0">Навигация</h4>
+        <p class="mt8"><a href="perviy.html">Первый сорт</a> · <a href="sredniy.html">Средний сорт</a> · <a href="vysshij.html">Высший сорт</a><br><a href="about.html">О нас</a> · <a href="contacts.html">Контакты</a></p>
+      </div>
+      <div>
+        <h4 class="m0">Связаться</h4>
+        <p class="mt8"><a href="https://wa.me/79990000000" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://t.me/nefis_market" target="_blank" rel="noopener">Telegram</a><br><a href="tel:+79990000000">+7 (999) 000-00-00</a></p>
+      </div>
+    </div>
+    <div class="copy">© 2025 Nefis Market</div>
+  </div>
 </footer>
 </body>
 </html>
