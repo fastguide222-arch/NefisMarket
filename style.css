@@ -1,121 +1,93 @@
-/* ===== Общие стили ===== */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* тёмный премиальный фон */
-    color: #f5f5f5; /* светлый текст */
+/* ====== NEFIS MARKET — Глобальные стили ====== */
+:root{
+  --bg:#fffdf8;
+  --surface:#ffffff;
+  --brand:#2f6b3a;         /* тёплый зелёный — натуральность */
+  --brand-2:#d9a441;       /* масляно-золотой — акцент */
+  --text:#2b2b2b;
+  --muted:#6b6b6b;
+  --border:#ece6d9;
+  --shadow:0 10px 25px rgba(0,0,0,.06);
+  --radius:18px;
+  --radius-lg:28px;
 }
 
-header {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";font-size:16px;line-height:1.6}
+
+img{max-width:100%;display:block;border-radius:14px}
+a{color:var(--brand);text-decoration:none}
+a:hover{opacity:.9}
+
+/* Контейнер и сетка */
+.container{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+.section{padding:64px 0}
+.section-tight{padding:36px 0}
+.grid{display:grid;gap:24px}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:980px){.grid-3,.grid-2{grid-template-columns:1fr}}
+
+/* Шапка */
+.header{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.85);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{
+  width:40px;height:40px;border-radius:12px;background:
+  radial-gradient(120px 80px at 30% 30%, #ffe9a6, #f7d06a 50%, #e7b84c);
+  box-shadow:inset 0 3px 10px rgba(0,0,0,.08), 0 6px 14px rgba(233,190,84,.25);
+}
+.brand h1{font-size:18px;margin:0;font-weight:700;letter-spacing:.3px}
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{padding:10px 12px;border-radius:10px}
+.nav-links a.active, .nav-links a:hover{background:var(--surface);border:1px solid var(--border)}
+.burger{display:none;border:0;background:transparent;font-size:0}
+@media (max-width:860px){
+  .burger{display:block;width:40px;height:40px;border-radius:12px;border:1px solid var(--border)}
+  .nav-links{display:none;position:absolute;left:16px;right:16px;top:70px;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:12px}
+  .nav-links.open{display:flex}
 }
 
-nav a {
-    color: #f5f5f5;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
+/* Хиро */
+.hero{display:grid;gap:28px;grid-template-columns:1.2fr .8fr;align-items:center}
+.hero .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow)}
+.hero h2{font-size:42px;line-height:1.15;margin:0 0 10px}
+.hero p{color:var(--muted);margin:0 0 18px}
+.badge{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;background:#f4f0e6;border:1px solid var(--border);font-size:14px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);cursor:pointer;font-weight:600}
+.btn-primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+.btn-secondary{background:#fff;border-color:var(--border)}
+.btn-accent{background:var(--brand-2);color:#2b220a;border-color:var(--brand-2)}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.06)}
+.icon{width:18px;height:18px}
 
-nav a:hover {
-    color: #ffcc66; /* золотистый акцент */
-}
+/* Карточки товара */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.card h3{margin:12px 0 6px}
+.card p{margin:0;color:var(--muted)}
+.price{font-weight:800;font-size:20px;margin-top:8px;color:#1f1f1f}
+.card .actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
 
-/* ===== Главный баннер ===== */
-.hero {
-    background: url('https://via.placeholder.com/1200x400?text=Сливочное+масло') center/cover no-repeat;
-    padding: 100px 20px;
-    text-align: center;
-}
+/* Блок “о нас”, отзывы */
+.kv{display:grid;gap:24px;grid-template-columns:1fr 1fr}
+@media (max-width:980px){.hero{grid-template-columns:1fr}.kv{grid-template-columns:1fr}}
+.quote{font-size:18px;font-style:italic;color:#3a3a3a;background:#faf7ee;border:1px solid var(--border);padding:18px;border-radius:16px}
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: #ffcc66;
-}
+/* Таблица */
+.table{width:100%;border-collapse:separate;border-spacing:0 8px}
+.table th{font-size:13px;color:#555;text-align:left}
+.table td,.table th{padding:12px 14px;background:var(--surface);border:1px solid var(--border)}
+.table td:first-child,.table th:first-child{border-top-left-radius:12px;border-bottom-left-radius:12px}
+.table td:last-child,.table th:last-child{border-top-right-radius:12px;border-bottom-right-radius:12px}
 
-.hero p {
-    font-size: 20px;
-}
-
-/* ===== Карточки товаров ===== */
-.products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
-}
-
-.card {
-    background-color: #222;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card h3 {
-    color: #ffcc66;
-}
-
-.card p {
-    padding: 0 15px;
-}
-
-.btn {
-    display: inline-block;
-    margin: 15px 0;
-    padding: 10px 20px;
-    background-color: #ffcc66;
-    color: #1a1a1a;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #e6b84d;
-}
-
-/* ===== Контакты ===== */
-.contacts {
-    text-align: center;
-    padding: 40px;
-}
-
-.contacts a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    background-color: #ffcc66;
-    color: #1a1a1a;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.contacts a:hover {
-    background-color: #e6b84d;
-}
-
-/* ===== Подвал ===== */
-footer {
-    background-color: #111;
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-    margin-top: 20px;
-}
+/* Футер */
+.footer{background:#0f1a12;color:#eae6dc;border-top:1px solid #203024}
+.footer a{color:#e8d49a}
+.footer .cols{display:grid;gap:24px;grid-template-columns:2fr 1fr 1fr}
+.footer .brand h1{color:#fff}
+.copy{margin-top:16px;padding-top:16px;border-top:1px dashed rgba(255,255,255,.15);font-size:14px;color:#cfc9bb}
+@media (max-width:980px){.footer .cols{grid-template-columns:1fr}}
+/* Утилиты */
+.m0{margin:0}.mt8{margin-top:8px}.mt16{margin-top:16px}.mt24{margin-top:24px}.mt32{margin-top:32px}
+.center{text-align:center}
