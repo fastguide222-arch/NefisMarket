@@ -2,94 +2,72 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
+  <title>Масло 72,5% — «Первый сорт» | Nefis Market</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Первый сорт — Nefis Market</title>
-  <meta name="description" content="Первый сорт сливочного масла Nefis: классический вкус, 72,5% жирности. Идеален для завтраков и выпечки." />
+  <meta name="description" content="Сливочное масло 72,5%: универсально для готовки и намазки. Свежие поставки, сертификаты." />
   <link rel="stylesheet" href="style.css" />
-  <script>
-    document.addEventListener('DOMContentLoaded',()=>{
-      document.querySelector('.burger')?.addEventListener('click',()=>document.querySelector('.nav-links').classList.toggle('open'))
-    })
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Product",
-    "name":"Сливочное масло — Первый сорт",
-    "brand":{"@type":"Brand","name":"Nefis Market"},
-    "description":"Классический сливочный вкус, 72.5% жирности, без добавок.",
-    "image":"https://images.unsplash.com/photo-1626697559855-0f3bca7ff280?q=80&w=1200&auto=format&fit=crop",
-    "offers":{"@type":"Offer","price":"179","priceCurrency":"RUB","availability":"https://schema.org/InStock"},
-    "gtin":"0000000000000"
-  }
-  </script>
 </head>
 <body>
 <header class="header">
-  <div class="container nav">
-    <a href="index.html" class="brand"><div class="logo"></div><h1>Nefis Market</h1></a>
-    <button class="burger" aria-label="Меню"><svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round"/></svg></button>
-    <nav class="nav-links">
-      <a href="index.html">Главная</a>
-      <a href="perviy.html" class="active">Первый сорт</a>
-      <a href="sredniy.html">Средний сорт</a>
-      <a href="vysshij.html">Высший сорт</a>
+  <div class="container row">
+    <a class="logo" href="index.html"><span class="logo-mark"></span> NEFIS MARKET</a>
+    <nav class="nav">
+      <a href="index.html#catalog">Каталог</a>
       <a href="about.html">О нас</a>
-      <a href="contacts.html">Контакты</a>
+      <a class="cta" href="contacts.html">Заказать</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="section">
-    <div class="container kv">
-      <img src="https://images.unsplash.com/photo-1626697559855-0f3bca7ff280?q=80&w=1200&auto=format&fit=crop" alt="Первый сорт масла" />
-      <div class="card">
-        <h2 class="m0">Первый сорт</h2>
-        <p class="mt8" style="color:var(--muted)">Классика на каждый день. Чистый сливочный вкус и приятная пластичность.</p>
-        <div class="price">от 179 ₽ / 200 г</div>
-        <div class="cta-row mt16">
-          <a class="btn btn-primary" href="https://wa.me/79990000000" target="_blank" rel="noopener">Заказать в WhatsApp</a>
-          <a class="btn" href="https://t.me/nefis_market" target="_blank" rel="noopener">Написать в Telegram</a>
-          <a class="btn" href="tel:+79990000000">Позвонить</a>
-        </div>
-        <h3 class="mt24 m0">Особенности</h3>
-        <ul class="mt8">
-          <li>Жирность: 72,5%</li>
-          <li>Состав: сливки пастеризованные. Без растительных жиров и консервантов.</li>
-          <li>Упаковка: фольга 200 г</li>
-          <li>Идеален для бутербродов, каш и домашней выпечки</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<main class="container">
+  <nav class="breadcrumbs"><a href="index.html">Главная</a> / <a href="index.html#catalog">Каталог</a> / <span>72,5%</span></nav>
 
   <section class="section">
-    <div class="container">
-      <h3 class="m0">Пищевая ценность (на 100 г)</h3>
-      <table class="table mt16" aria-label="Пищевая ценность">
-        <thead><tr><th>Показатель</th><th>Количество</th></tr></thead>
-        <tbody>
-          <tr><td>Энергетическая ценность</td><td>660 ккал</td></tr>
+    <h1>Сливочное масло 72,5% — «Первый сорт»</h1>
+    <p class="sub">Универсальный выбор для повседневной кухни. Оптимально по цене и вкусу.</p>
+
+    <div class="grid cols-2 mt-16">
+      <div class="card">
+        <div class="pic" aria-label="Фото продукта">72,5% ГОСТ</div>
+        <div class="body">
+          <p class="price">от 169 ₽ / 180 г</p>
+          <div class="mt-8">
+            <a class="btn" href="contacts.html">Заказать</a>
+            <a class="btn secondary" href="#">Сертификат (пример)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card"><div class="body">
+        <h3>Кратко</h3>
+        <ul>
+          <li>Жирность 72,5%, без растительных жиров.</li>
+          <li>Идеально для каш, жарки, намазки.</li>
+          <li>Упаковка: 180 г, 450 г.</li>
+        </ul>
+
+        <h3 class="mt-16">Пищевая ценность (на 100 г)</h3>
+        <table class="table">
+          <tr><th>Показатель</th><th>Значение</th></tr>
           <tr><td>Жиры</td><td>72,5 г</td></tr>
-          <tr><td>Белки</td><td>0,7 г</td></tr>
-          <tr><td>Углеводы</td><td>1,3 г</td></tr>
-          <tr><td>Соль</td><td>0–1,5%</td></tr>
-        </tbody>
-      </table>
-      <p class="mt16 quote">Совет: намазывайте на чуть тёплый хлеб — раскрывается нежный аромат сливок.</p>
+          <tr><td>Белки</td><td>0,6 г</td></tr>
+          <tr><td>Углеводы</td><td>1,0 г</td></tr>
+          <tr><td>Энергетическая ценность</td><td>~ 660 ккал</td></tr>
+        </table>
+      </div></div>
     </div>
+
+    <div class="card mt-24"><div class="body">
+      <strong>Совет:</strong> для выпечки, где важна пластичность и цена, 72,5% — рациональный выбор. Для кремов и слоёного теста берите 82,5%.
+    </div></div>
   </section>
 </main>
 
-<footer class="footer section">
-  <div class="container">
-    <div class="cols">
-      <div class="brand"><div class="logo"></div><h1>Nefis Market</h1></div>
-      <div><h4 class="m0">Документы</h4><p class="mt8">ГОСТ, сертификаты — по запросу в мессенджере.</p></div>
-      <div><h4 class="m0">Связь</h4><p class="mt8"><a href="https://wa.me/79990000000" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://t.me/nefis_market" target="_blank" rel="noopener">Telegram</a><br><a href="tel:+79990000000">+7 (999) 000-00-00</a></p></div>
-    </div>
-    <div class="copy">© 2025 Nefis Market</div>
+<footer class="footer">
+  <div class="container cols">
+    <div><a class="logo" href="index.html"><span class="logo-mark"></span> NEFIS MARKET</a></div>
+    <div><a href="index.html#catalog">Каталог</a><br><a href="contacts.html">Контакты</a></div>
+    <div><a href="mailto:hello@nefis.market">hello@nefis.market</a><br><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></div>
   </div>
 </footer>
 </body>
